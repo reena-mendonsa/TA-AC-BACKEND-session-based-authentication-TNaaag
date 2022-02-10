@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  
+  display: flex;
+}
+
+.justify-between {
+          justify-content: space-between;
+}
+
+.justify-start {
+          justify-content: flex-start;
+}
+
+.justify-end {
+          justify-content: flex-end;
+}
+
+.justify-around {
+      justify-content: space-around;
+}
+
+.justify-evenly {
+          justify-content: space-evenly;
+}
+
+.justify-center {
+          justify-content: center;
+}
+
+.align-center {
+          align-items: center;
+}
+
+.align-start {
+          align-items: flex-start;
+}
+
+.align-end {
+          align-items: flex-end;
+}
+
+.align-between {
+          align-items: space-between;
+}
+
+.align-around {
+          align-items: space-around;
+}
+
+.align-evenly {
+          align-items: space-evenly;
+}
+
+.flex-column {
+          flex-direction: column;
+}
+
+.flex-wrap {
+      flex-wrap: wrap;
+}
+
+.flex-20 {
+          flex: 0 1 20%;
+}
+
+.flex-25 {
+          flex: 0 1 25%;
+}
+
+.flex-30 {
+          flex: 0 1 30%;
+}
+
+.flex-32 {
+          flex: 0 1 32%;
+}
+
+.flex-40 {
+          flex: 0 1 40%;
+}
+
+.flex-48 {
+          flex: 0 1 48%;
+}
+
+.flex-50 {
+          flex: 0 1 50%;
+}
+
+.flex-60 {
+          flex: 0 1 60%;
+}
+
+.flex-75 {
+          flex: 0 1 75%;
+}
+
+.flex-100 {
+          flex: 0 1 100%;
+}
+
+/*Global*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Images */
+.font-0 {
+  font-size: 0;
+}
+
+.full-width {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.66rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  outline: none;
+  border: none;
+  margin: 1rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: green;
+}
+
+.btn-primary:hover {
+
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: purple;
+}
+
+.header {
+
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: Green;
+  font-weight: 500;
+  vertical-align: text-top;
+}
+
+.header .logo span {
+  font-size: 3rem;
+  color: orange;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header .user-info {
+  margin-left: 1rem;
+}
+
+.header .user-info h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header .user-info p {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.home h1 {
+  text-align: center;
+  color: green;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin: 2rem auto;
+}
+
+.home .hero div {
+          flex: 0 1 45%;
+  height: 35rem;
+  display: flex;
+          justify-content: center;
+          align-items: center;
+}
+
+.signin h2 {
+  text-align: center;
+  color: green;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.signin form {
+  width: 40%;
+  background-color: rgba(0, 255, 0, 0.35);
+  margin: 1rem auto;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.signin form input {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.signin form input:focus {
+  outline-color: green;
+}
+
+.signin form textarea {
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+.signin form textarea:focus {
+  outline-color: green;
+}
+
+.signin form select {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.signin form select:focus {
+  outline-color: green;
+}
+
+.signin form p {
+  color: red;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.signin form .adjust {
+  padding-top: 0.26rem;
+  padding-left: 0.26rem;
+}
+
+.products .productlist .product {
+  margin: 1rem;
+  width: 18rem;
+  height: 25rem;
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.products .productlist .img-box {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.45rem;
+  border: 2px solid green;
+  overflow: hidden;
+}
+
+.products .productlist .details {
+  width: 100%;
+  height: 15%;
+  border-radius: 0.45rem;
+  border: 2px solid green;
+  padding: 0.25rem;
+}
+
+.products .productlist .addproduct {
+  display: flex;
+          justify-content: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.productDetails .details {
+  margin-top: 1rem;
+}
+
+.productDetails .details .image {
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 25rem;
+  height: 30rem;
+  margin-right: 1rem;
+}
+
+.productDetails .details a {
+  margin-left: 0;
+}
+
+.productDetails .comments {
+  margin-top: 1rem;
+  border-top: 2px solid green;
+  padding-top: 1rem;
+  width: 50%;
+}
+
+.productDetails .comments .comment {
+  background-color: rgba(0, 255, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.productDetails .comments form {
+  background-color: rgba(100, 255, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.55rem;
+  margin-bottom: 0.75rem;
+}
+
+.productDetails .comments input {
+  width: 88%;
+  height: 2rem;
+}
+
+.productDetails .comments button {
+  width: 10%;
+  height: 1.95rem;
+  color: green;
+}
+
+.productDetails .comments input:focus {
+  outline-color: green;
+}
+/*# sourceMappingURL=style.css.map */
