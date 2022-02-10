@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Product Details | E-Cart</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container flex justify-between align-center">
+        <a href="" class="logo"><span>E</span>cart</a>
+        <div class="flex justify-between align-center">
+          <a class="btn btn-primary" href="">Log Out</a>
+          <div class="user-info flex justify-between align-center flex-column">
+            <h2>Name</h2>
+            <p>User</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Main-->
+    <main class="productDetails container">
+      <div class="details flex justify-between align-start">
+        <div class="image">
+          <img
+            class="full-width"
+            src="/images/bullets.jpeg"
+            alt="Product Image"
+          />
+        </div>
+        <div class="flex-75">
+          <h1>Name of product</h1>
+          <h4>Specifications & Description:</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <a class="btn btn-secondary" href=""> <i class="fas fa-heart"></i></a>
+          <br />
+          <a class="btn btn-secondary" href=""
+            ><i class="fas fa-cart-plus"></i>
+          </a>
+          <br />
+          <a class="btn btn-secondary" href=""
+            ><i class="fas fa-arrow-circle-left"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="comments">
+        <div class="comment flex justify-between align-center">
+          <p>Add your text here...</p>
+          <div>
+            <a href=""><i class="far fa-edit"></i></a>
+            <a href=""><i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Add Comment Here.." />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

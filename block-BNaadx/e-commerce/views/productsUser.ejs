@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
+    <title>Product List | E-Cart</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5cc6fb9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="header">
+      <div class="container flex justify-between align-center">
+        <a href="" class="logo"><span>E</span>cart</a>
+        <div class="flex justify-between align-center">
+          <a class="btn btn-primary" href="/users/logout">Log Out</a>
+          <div class="user-info flex justify-between align-center flex-column">
+            <h2><%= user.name %></h2>
+            <p>User</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Main-->
+    <main class="container products">
+      <section class="productlist flex justify-start align-center">
+        <div class="product flex justify-between align-center flex-column">
+          <div class="img-box">
+            <img class="full-width" src="/images/bullets.jpeg" alt="Product" />
+          </div>
+          <div class="details flex justify-between align-center">       
+            <div class="price">$<%= user.price  %> </div>
+            <a class="btn btn-secondary" href="">View</a>
+            <div class="totalItems">20 Left</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
